@@ -10,7 +10,7 @@
 GERP Core
 ========
 """,
-    'depends': ['base_setup', 'account', 'sale', 'purchase', 'stock', 'hr_expense'],
+    'depends': ['base_setup', 'account', 'sale', 'purchase', 'stock', 'hr_expense','hr_payroll'],
     'data': [
         'security/core_security.xml',
         'views/main_menu.xml',
