@@ -41,9 +41,7 @@
 
         <menuitem id="hr_payroll.menu_hr_payroll_root" name="Payroll" parent="gerp_root_menu"/>
 
-        <!--extra menus-->
-        <!--<menuitem id="mail.mail_channel_menu_root_chat" name="Discuss" action="mail.mail_channel_action_client_chat"-->
-        <!--parent="gerp_root_menu" groups="base.group_user"/>-->
+       
 
     </data>
 </odoo>
