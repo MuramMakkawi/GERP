@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- main menu-->
+        <menuitem id="gerp_root_menu" name="GERP"/>
+
+        <!-- account menus -->
+        <menuitem id="account.menu_finance" name="Accounting" parent="gerp_root_menu"
+                  groups="account.group_account_user,account.group_account_manager,account.group_account_invoice"
+                  web_icon="account,static/description/icon.png"/>
+
+        <!-- sale menus-->
+        <menuitem id="sale.sale_menu_root"
+                  name="Sales"
+                  parent="gerp_root_menu"
+                  web_icon="sale,static/description/icon.png"/>
+
+        <!-- purchase menus-->
+        <menuitem id="purchase.menu_purchase_root" name="Purchases" parent="gerp_root_menu"
+                  groups="purchase.group_purchase_manager,purchase.group_purchase_user"
+                  web_icon="purchase,static/description/icon.png"/>
+
+        <!-- point of sale menus -->
+        <!--        <menuitem id="point_of_sale.menu_point_root" name="Point of Sale" load_xmlid="True" parent="gerp_root_menu"-->
+        <!--                  groups="point_of_sale.group_pos_manager,point_of_sale.group_pos_user"-->
+        <!--                  web_icon="point_of_sale,static/description/icon.png"/>-->
+
+        <!-- stock menus-->
+        <menuitem id="stock.menu_stock_root" name="Inventory" parent="gerp_root_menu"
+                  groups="stock.group_stock_manager,stock.group_stock_user"
+                  web_icon="stock,static/description/icon.png"/>
+
+        <!-- hr menus -->
+        <menuitem id="hr.menu_hr_root" name="Employees" parent="gerp_root_menu"
+                  groups="hr.group_hr_manager,hr.group_hr_user,base.group_user"
+                  web_icon="hr,static/description/icon.png"/>
+
+        <!--expense menus-->
+        <menuitem id="hr_expense.menu_hr_expense_root" name="Expenses" parent="gerp_root_menu"
+                  web_icon="hr_expense,static/description/icon.png"/>
+
+        <!--extra menus-->
+        <!--<menuitem id="mail.mail_channel_menu_root_chat" name="Discuss" action="mail.mail_channel_action_client_chat"-->
+        <!--parent="gerp_root_menu" groups="base.group_user"/>-->
+
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Invnetory Rule-->
+
+	<record model="ir.rule" id="stock_warehouse_gerp_rule">
+        <field name="name">Warehouse Gerp user</field>
+        <field name="model_id" ref="stock.model_stock_warehouse"/>
+		<field name="groups" eval="[(4, ref('gerp_core.group_gerp_user'))]"/>
+		<field name="domain_force">['|',('department_id','=',False),('department_id','=',user.department_id.id)]</field>
+	</record>
+
+	 <record model="ir.rule" id="stock_picking_type_gerp_rule">
+        <field name="name">Stock Operation Gerp user</field>
+        <field name="model_id" search="[('model','=','stock.picking.type')]" model="ir.model"/>
+        <field name="global" eval="True"/>
+		<field name="domain_force">['|',('warehouse_id.department_id','=',False),('warehouse_id.department_id','=',user.department_id.id)]</field>
+    </record>
+    
+</odoo>

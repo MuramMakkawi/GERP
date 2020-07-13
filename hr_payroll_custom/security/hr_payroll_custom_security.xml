@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payslip_multicompany" model="ir.rule">
+        <field name="name">Hr Payslip rule</field>
+        <field name="model_id" ref="model_hr_payslip"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force"> ['|', ('company_id','=',False), ('company_id','child_of',[user.company_id.id])] </field>
+    </record>
+    
+    <record id="hr_payslip_run_multicompany" model="ir.rule">
+        <field name="name">Hr Payslip Run rule</field>
+        <field name="model_id" ref="model_hr_payslip_run"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force"> ['|', ('company_id','=',False), ('company_id','child_of',[user.company_id.id])] </field>
+    </record>
+</odoo>

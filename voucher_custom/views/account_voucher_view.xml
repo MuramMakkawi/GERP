@@ -1,0 +1,43 @@
+<odoo>
+  <data>
+        <record id="view_account_voucher_purchase_inherit" model="ir.ui.view">
+            <field name="name">voucher purchase form</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_purchase_receipt_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="cancel_voucher" string="Cancel Receipt" type="object" states="open" confirm="Are you sure you want to cancel this receipt?"/>
+                </xpath>
+
+                <xpath expr="//field[@name='quantity']" position="before">
+                    <field name="partner_id" />
+                </xpath>
+
+                <xpath expr="//header//field[@name='state']" position="replace">
+                    <field name="state" widget="statusbar" statusbar_visible="draft,open,posted"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="view_account_voucher_sale_inherit" model="ir.ui.view">
+            <field name="name">voucher sale form</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_sale_receipt_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='quantity']" position="before">
+                    <field name="partner_id" />
+                </xpath>
+
+                <xpath expr="//header" position="inside">
+                  <button name="cancel_voucher" string="Cancel" type="object" states="open" confirm="Are you sure you want to cancel this receipt?"/>
+                </xpath>
+                
+                <xpath expr="//header//field[@name='state']" position="replace">
+                  <field name="state" widget="statusbar" statusbar_visible="draft,open,posted"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

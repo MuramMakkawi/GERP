@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="view_department_form_inherit">
+      <field name="name">hr.department.inherit</field>
+      <field name="model">hr.department</field>
+      <field name="inherit_id" ref="hr.view_department_form"/>
+      <field name="arch" type="xml">
+        <field name="parent_id" position="after">
+          <field name="main_branch"/>
+        </field>
+      </field>
+    </record>
+    
+    
+  </data>
+</odoo>

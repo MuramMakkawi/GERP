@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <report
+                string="Loan Requests Forms"
+                id="action_loan_requests_report"
+                model="hr.loan"
+                report_type="qweb-pdf"
+                name="hr_loan.report_loan_document"
+                file="hr_loan.report_loan_document"
+        />
+    </data>
+</odoo>

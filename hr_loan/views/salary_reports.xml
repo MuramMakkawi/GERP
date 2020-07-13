@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <report
+                string="Salary Advance Forms"
+                id="action_salary_advance_report"
+                model="hr.loan"
+                report_type="qweb-pdf"
+                name="hr_loan.report_salary_document"
+                file="hr_loan.report_salary_document"
+        />
+    </data>
+</odoo>
