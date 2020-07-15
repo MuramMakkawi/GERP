@@ -28,12 +28,12 @@
         </record>
 
         <!--Hide Group-->
-        <record id="group_gerp_hide" model="res.groups">
+        <!-- <record id="group_gerp_hide" model="res.groups">
             <field name="name">Hide Menus</field>
             <field name="category_id" ref="module_category_grep"/>
             <field name="users" eval="[(4, ref('base.user_root'))]"/>
             <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
-        </record>
+        </record> -->
 
 
 
