@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="gerp_account.list">
+      <field name="name">gerp_account list</field>
+      <field name="model">gerp_account.gerp_account</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="gerp_account.action_window">
+      <field name="name">gerp_account window</field>
+      <field name="res_model">gerp_account.gerp_account</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="gerp_account.action_server">
+      <field name="name">gerp_account server</field>
+      <field name="model_id" ref="model_gerp_account_gerp_account"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="gerp_account" id="gerp_account.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="gerp_account.menu_1" parent="gerp_account.menu_root"/>
+    <menuitem name="Menu 2" id="gerp_account.menu_2" parent="gerp_account.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="gerp_account.menu_1_list" parent="gerp_account.menu_1"
+              action="gerp_account.action_window"/>
+    <menuitem name="Server to list" id="gerp_account" parent="gerp_account.menu_2"
+              action="gerp_account.action_server"/>
+    -->
+  </data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gerp_account_gerp_account,gerp_account.gerp_account,model_gerp_account_gerp_account,,1,0,0,0

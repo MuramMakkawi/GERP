@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "GERP Inventory",
+    'name': "GERP Account",
 
-    'summary': """Inventory custome""",
+    'summary': """Account""",
 
     'description': """
-        Inventory custome
+       Account Custome
     """,
 
     'author': "Muram Makkawy Mubarak",
@@ -13,19 +13,16 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Inventory',
+    'category': 'Invoice',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['gerp_core'],
+    'depends': ['account'],
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
-        'security/stock_secutiry.xml',
-        'views/stock_warehouse_view.xml',
-        'views/stock_location_view.xml'
+        # 'security/ir.model.access.csv',
+        'security/account_security.xml',
     ],
-    # only loaded in demonstration mode
-    
+  
 }

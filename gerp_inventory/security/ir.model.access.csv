@@ -14,3 +14,5 @@ access_product_product_group_gerp_manager,product.product group_gerp_manager,pro
 ,,,,,,,
 stock.access_stock_warehouse_manager,stock.warehouse.manager,stock.model_stock_warehouse,stock.group_stock_manager,1,1,1,1
 access_stock_warehouse_gerp_manager,stock.warehouse  group_gerp_manager,stock.model_stock_warehouse,gerp_core.group_gerp_manager,1,1,1,1
+stock.access_stock_picking_manager,stock.picking.manager,stock.model_stock_picking_type,stock.group_stock_manager,1,1,1,1
+access_stock_picking_gerp_manager,stock.picking  group_gerp_manager,stock.model_stock_picking_type,gerp_core.group_gerp_manager,1,1,1,1
