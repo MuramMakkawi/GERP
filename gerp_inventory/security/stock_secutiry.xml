@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Invnetory Rule-->
+    <!-- Inventory Rule-->
 
     <record model="ir.rule" id="stock_warehouse_gerp_rule">
         <field name="name">Warehouse Gerp user</field>

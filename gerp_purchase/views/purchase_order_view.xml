@@ -11,6 +11,9 @@
           <attribute name="readonly">True</attribute>
           <attribute name="force_save">True</attribute>
         </field>
+<!--        <xpath expr="//field[@name='order_line']" position="attributes">-->
+<!--            <attribute name="context">{'default_account_analytic_id': uid.department_id.account_analytic_id}</attribute>-->
+<!--        </xpath>-->
       </field>
     </record>
     
